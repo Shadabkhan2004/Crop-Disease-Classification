@@ -49,6 +49,6 @@ npm run dev
 
 ### Example
 
-![Prediction Screenshot 1](images/image1.jpg)
+![Prediction Screenshot 1](images/image1.png)
 
 ![Prediction Screenshot 2](images/image2.png)
