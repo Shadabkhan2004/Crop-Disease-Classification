@@ -47,7 +47,7 @@ npm run dev
 
 ```
 
-### Example
+### Web App Demo
 
 ![Prediction Screenshot 1](images/image1.png)
 
