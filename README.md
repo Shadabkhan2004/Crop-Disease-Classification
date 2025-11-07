@@ -19,6 +19,15 @@ Built with **FastAPI** (backend) and **React + Vite** (frontend).
 
 ---
 
+## Model Evaluation Results
+
+| Metric       | Value   |
+|---------------|---------|
+| **Test Accuracy** | 94.42% |
+| **Test Loss**     | 0.22   |
+
+---
+
 ## Setup Instructions
 
 ### Clone the Repository
