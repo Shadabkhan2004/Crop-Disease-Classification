@@ -7,6 +7,8 @@ function App() {
   const [result, setResult] = useState(null);
   const [loading, setLoading] = useState(false);
 
+  const API_URL = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
+
   const handleFileChange = (e) => {
     const selectedFile = e.target.files[0];
     if (selectedFile) {
@@ -25,7 +27,7 @@ function App() {
     formData.append("file", file);
 
     try {
-      const res = await axios.post("http://127.0.0.1:8000/predict", formData, {
+      const res = await axios.post(`${API_URL}/predict`, formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
       setResult(res.data);
