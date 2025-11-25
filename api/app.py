@@ -5,6 +5,8 @@ from tensorflow.keras.applications.efficientnet import preprocess_input
 import numpy as np
 from PIL import Image
 import io
+import os
+import uvicorn
 
 from model.model_architecture import get_model
 
@@ -35,3 +37,8 @@ async def predict(file: UploadFile = File(...)):
 
   return {"predicted_class": class_names[class_idx] , "confidence":confidence}
 
+
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 8000))
+    uvicorn.run("app:app", host="0.0.0.0", port=port)
